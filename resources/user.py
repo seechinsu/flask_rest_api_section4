@@ -1,8 +1,6 @@
-import sqlite3
 from flask_restful import Resource, reqparse
 from models.user import UserModel
 
-db_home = 'C:\\Users\\seech\\PycharmProjects\\flask_api_section4\\data.db'
 
 class UserRegister(Resource):
 
