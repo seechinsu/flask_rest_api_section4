@@ -8,6 +8,7 @@ from resources.store import Store, StoreList
 from security import authenticate, identity
 
 app = Flask(__name__)
+#app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:sechien@localhost/flask_api'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///data.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.secret_key = 'seech'
